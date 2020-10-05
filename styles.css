@@ -1,7 +1,7 @@
 .container{
  display: grid;
- grid-template-rows: auto auto auto;
- grid-template-columns: auto auto auto;
+ grid-template-rows: auto auto auto auto;
+ grid-template-columns: auto auto auto auto;
  grid-gap: 2em;
 }
 
@@ -48,11 +48,12 @@ main{
 }
 
 header {
-
+  grid-row: 1;
+  grid-column: span 4;
   color: #FFFFFF;
   background: #63B3ED;
   padding: 1em;
-  width: 800px;
+  width: 700px;
   height: 300px;
   justify-content: center;
   align-items: center;
@@ -79,16 +80,27 @@ aside{
 }
 aside > a{
  color: #4299E1; 
+ 
 }
 
-footer{
+#footer{
  background: #2C5282;
  color: #FFFFFF;
  width: 100%;
- grid-start-row: 3;
- position: fixed;
+ grid-row: 4;
+ grid-column: span 4;
+
 }
 
+#articlebox{
+ {
+  background: #2db34a;
+  border-radius: 6px;
+  color: #fff;
+  padding: 24px 15px;
+  text-align: center;
+}
+}
 
 
 
